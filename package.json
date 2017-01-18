@@ -1,0 +1,22 @@
+{
+  "name": "cache-store-memcached",
+  "version": "0.1.0",
+  "description": "General cache storage based on memcached",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "mocha -r should --check-leaks --use_strict --recursive --bail --reporter spec",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --use_strict --recursive --bail --reporter dot -r should"
+  },
+  "author": "楼教主 <fe.52cik@gmail.com> (http://www.52cik.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "memcached": "^2.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "should": "^11.1.2"
+  }
+}
